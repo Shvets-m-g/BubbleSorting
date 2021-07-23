@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sorting</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<header id="header">
+		<div class="container">
+			<div class="header_container">
+				<div class="logo">
+					<div class="logo-text">
+						BubbleSorting
+					</div>
+				</div>
+				<menu>
+					<li>
+						<a href="#terms-of-use">
+							Правила использования
+						</a>
+					</li>
+				</menu>
+			</div>
+		</div>
+	</header>
+	<div class="game">
+		<div class="game-form">
+			<div class="container">
+				<h1 class="title big">
+					Анимированная сортировка.Сортировка пузырьком.
+				</h1>
+				<form action="" class="game-form">
+					<div class="title medium">
+						Введите размер сортируемого массива
+					</div>
+					<div class="game-form_container">
+						<div class="group">
+							<div class="form-control">
+								<input type="text" id="input-generate-value" placeholder="Размер">
+								<div class="form-control_text" ></div>
+							</div>
+							<div class="form-control">
+								<button class="button secondary button-generate ">
+									Сгенерировать
+								</button>
+							</div>
+						</div>
+						<button class="button primary button-start ">
+							СТАРТ
+						</button>
+					</div>
+					<div class="form-info-text">
+						Нажимайте "СТАРТ" для запуска. <br>
+						Без указания размера массива <br>
+						 он будет выбран автоматически
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="game-container">
+			<div class="container">
+				<div class="array-container" id="array-container">
+					<div class="title small" >
+						Массив:
+					</div>
+					<div id="array" class="array"></div>
+				</div>
+				<div class="array-container" id="old-array-container">
+					<div class="title small">
+						Массив до сортировки:
+					</div>
+					<div id="old-array" class="array"></div>
+				</div>
+				<div class="game-result">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="info-box" id="terms-of-use">
+		<div class="container">
+			<div class="info-text_container">
+				<div class="title big">
+					Правила использования
+				</div>
+				<div class="text">
+					<p>
+						Программа разработана в качестве тестового задания для наглядной демонстрации сортировки массива методом Пузырька.
+					</p>
+					<p>
+						Для запуска сортировки  необходимо нажать на кнопку "СТАРТ".  Во время работы программы кнопки отключены.
+					</p>
+					<p>
+						Для генерации массива определенного размера необходимо ввести размер в поле "Размер" и нажать на кнопку "Сгенерировать". Затем для запуска сортировки нажмите на кнопку "СТАРТ".
+					</p>
+					<p>
+
+					</p>
+				</div>
+				<div class="title medium">
+					Спасибо за внимание! Буду рада комментариям : )
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

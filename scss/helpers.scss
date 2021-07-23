@@ -1,0 +1,179 @@
+._notext, ._notext a, a._notext {
+	text-indent: -99em;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+._noselect {
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@mixin ts($delay: $transition-delay, $time-function: ease) {
+	transition: all $time-function $delay;
+}
+
+@mixin ts-oe($delay: $transition-delay) {
+	transition: all cubic-bezier(0.770, 0.000, 0.175, 1.000) $delay;
+}
+
+@mixin ts-c($animation, $time, $delay: 0ms) {
+	transition: all $animation $time $delay;
+}
+
+@mixin no-ts {
+	-webkit-transition: none;
+	transition: none;
+}
+
+@mixin no-text {
+	text-indent: -99em;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+@mixin absc {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+@mixin svg-bg($image: none) {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	@if ($image != 'none') {
+		background-image: url($image);
+	}
+}
+
+@mixin placeholder-styles {
+	&::-webkit-input-placeholder {
+		@content
+	}
+	&::-moz-placeholder {
+		@content
+	}
+	&:-moz-placeholder {
+		@content
+	}
+	&::-ms-input-placeholder {
+		@content
+	}
+	&::input-placeholder {
+		@content
+	}
+}
+
+@mixin animation($name, $timingFunction, $fillMode, $time, $delay: 0ms) {
+	animation-timing-function: $timingFunction;
+	animation-fill-mode: $fillMode;
+	animation-duration: $time;
+	animation-delay: $delay;
+	animation-name: $name;
+	@content;
+}
+
+@mixin keyframes($name) {
+	@keyframes #{$name} {
+		@content;
+	}
+}
+
+/*
+
+.an(@name, @animation, @fill-mode, @time, @delay) {
+	-webkit-animation-timing-function: @animation;
+	-webkit-animation-fill-mode: @fill-mode;
+	-webkit-animation-duration: @time;
+	-webkit-animation-delay: @delay;
+	-webkit-animation-name: @name;
+	animation-timing-function: @animation;
+	animation-fill-mode: @fill-mode;
+	animation-duration: @time;
+	animation-delay: @delay;
+	animation-name: @name;
+} */
+
+/* .keyframes(@name;
+@arguments) {
+	@-webkit-keyframes @name {
+		@arguments();
+	}
+	@keyframes @name {
+		@arguments();
+	}
+} */
+
+/* .placeholderCuston(@styles) {
+	&::-webkit-input-placeholder {
+		@styles();
+	}
+	&::-moz-placeholder {
+		@styles();
+	}
+	&:-moz-placeholder {
+		@styles();
+	}
+	&::-ms-input-placeholder {
+		@styles();
+	}
+} */
+// without margin
+.w12, .w12m {
+	width: 100%;
+}
+
+.w11, .w11m {
+	width: 91.66666667%;
+}
+
+.w10, .w10m {
+	width: 83.33333333%;
+}
+
+.w9, .w9m {
+	width: 75%;
+}
+
+.w8, .w8m {
+	width: 66.66666667%;
+}
+
+.w7, .w7m {
+	width: 58.33333333%;
+}
+
+.w6, .w6m {
+	width: 50%;
+}
+
+.w5, .w5m {
+	width: 41.66666667%;
+}
+
+.w4, .w4m {
+	width: 33.33333333%;
+}
+
+.w3, .w3m {
+	width: 25%;
+}
+
+.w2, .w2m {
+	width: 16.66666667%;
+}
+
+.w1, .w1m {
+	width: 8.33333333%;
+}
+
+.w1m, .w2m, .w3m, .w4m, .w5m, .w6m, .w7m, .w8m, .w9m, .w10m, .w11m, .w12m {
+	margin-left: auto;
+	margin-right: auto;
+}

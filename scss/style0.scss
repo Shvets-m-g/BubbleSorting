@@ -1,0 +1,701 @@
+
+@import "helpers";
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('TTCommons-ThinItalic.eot');
+    src: local('TT Commons Thin Italic'), local('TTCommons-ThinItalic'),
+        url('../fonts/TTCommons-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTCommons-ThinItalic.woff') format('woff'),
+        url('../fonts/TTCommons-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('TTCommons-Light.eot');
+    src: local('TT Commons Light'), local('TTCommons-Light'),
+        url('../fonts/TTCommons-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTCommons-Light.woff') format('woff'),
+        url('../fonts/TTCommons-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('TTCommons-Black.eot');
+    src: local('TT Commons Black'), local('TTCommons-Black'),
+        url('../fonts/TTCommons-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTCommons-Black.woff') format('woff'),
+        url('../fonts/TTCommons-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('TTCommons-Medium.eot');
+    src: local('TT Commons Medium'), local('TTCommons-Medium'),
+        url('../fonts/TTCommons-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTCommons-Medium.woff') format('woff'),
+        url('../fonts/TTCommons-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('TTCommons-Italic.eot');
+    src: local('TT Commons Italic'), local('TTCommons-Italic'),
+        url('../fonts/TTCommons-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTCommons-Italic.woff') format('woff'),
+        url('../fonts/TTCommons-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('TTCommons-Regular.eot');
+    src: local('TT Commons Regular'), local('TTCommons-Regular'),
+        url('../fonts/TTCommons-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTCommons-Regular.woff') format('woff'),
+        url('../fonts/TTCommons-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('TTCommons-BlackItalic.eot');
+    src: local('TT Commons Black Italic'), local('TTCommons-BlackItalic'),
+        url('../fonts/TTCommons-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTCommons-BlackItalic.woff') format('woff'),
+        url('../fonts/TTCommons-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('TTCommons-ExtraBold.eot');
+    src: local('TT Commons ExtraBold'), local('TTCommons-ExtraBold'),
+        url('../fonts/TTCommons-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTCommons-ExtraBold.woff') format('woff'),
+        url('../fonts/TTCommons-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('TTCommons-BoldItalic.eot');
+    src: local('TT Commons Bold Italic'), local('TTCommons-BoldItalic'),
+        url('../fonts/TTCommons-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTCommons-BoldItalic.woff') format('woff'),
+        url('../fonts/TTCommons-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('TTCommons-DemiBoldItalic.eot');
+    src: local('TT Commons DemiBold Italic'), local('TTCommons-DemiBoldItalic'),
+        url('../fonts/TTCommons-DemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTCommons-DemiBoldItalic.woff') format('woff'),
+        url('../fonts/TTCommons-DemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('TTCommons-Bold.eot');
+    src: local('TT Commons Bold'), local('TTCommons-Bold'),
+        url('../fonts/TTCommons-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTCommons-Bold.woff') format('woff'),
+        url('../fonts/TTCommons-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('TTCommons-ExtraLight.eot');
+    src: local('TT Commons ExtraLight'), local('TTCommons-ExtraLight'),
+        url('../fonts/TTCommons-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTCommons-ExtraLight.woff') format('woff'),
+        url('../fonts/TTCommons-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('TTCommons-DemiBold.eot');
+    src: local('TT Commons DemiBold'), local('TTCommons-DemiBold'),
+        url('../fonts/TTCommons-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTCommons-DemiBold.woff') format('woff'),
+        url('../fonts/TTCommons-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('TTCommons-ExtraLightItalic.eot');
+    src: local('TT Commons ExtraLight Italic'), local('TTCommons-ExtraLightItalic'),
+        url('../fonts/TTCommons-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTCommons-ExtraLightItalic.woff') format('woff'),
+        url('../fonts/TTCommons-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('TTCommons-ExtraBoldItalic.eot');
+    src: local('TT Commons ExtraBold Italic'), local('TTCommons-ExtraBoldItalic'),
+        url('../fonts/TTCommons-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTCommons-ExtraBoldItalic.woff') format('woff'),
+        url('../fonts/TTCommons-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('TTCommons-MediumItalic.eot');
+    src: local('TT Commons Medium Italic'), local('TTCommons-MediumItalic'),
+        url('../fonts/TTCommons-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTCommons-MediumItalic.woff') format('woff'),
+        url('../fonts/TTCommons-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('TTCommons-LightItalic.eot');
+    src: local('TT Commons Light Italic'), local('TTCommons-LightItalic'),
+        url('../fonts/TTCommons-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTCommons-LightItalic.woff') format('woff'),
+        url('../fonts/TTCommons-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Commons';
+    src: url('TTCommons-Thin.eot');
+    src: local('../TT Commons Thin'), local('TTCommons-Thin'),
+        url('../fonts/TTCommons-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTCommons-Thin.woff') format('woff'),
+        url('../fonts/TTCommons-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+
+
+//colors
+
+$black: #414141;
+$red: #D71112;
+$blue: #3F7CD7;
+$lightgrey: #E9E9E9;
+
+$maincolor:#D71112;
+
+
+.title {
+	&.big {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 30px;
+		line-height: 1.2em;
+		color: #414141;
+	}
+	&.medium {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 1.2em;
+	}
+	&.small {
+		line-height: normal;
+		font-size: 19px;
+		font-weight: 600;
+		color: #543a3a;
+		letter-spacing: .8px;
+	}
+}
+
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+#content {
+}
+#header {
+	padding: 20px 0;
+	menu {
+		margin: 0 -25px;
+		list-style: none;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		li {
+			margin: 0 25px;
+			a {
+				text-decoration: none;
+				cursor: pointer;
+				font-size: 14px;
+				line-height: normal;
+				color: $black;
+			}
+		}
+	}
+}
+.game {
+	margin-top: 50px;
+	&-form {
+		margin-top: 44px;
+		&_container {
+			max-width: 400px;
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 -12px;
+		}
+		.group {
+			margin-top: 6px;
+			width: 100%;
+			display: flex;
+			align-items: center;
+		}
+		.button-start {
+			margin: 20px 0 0 auto;
+			&[disabled=disabled] {
+				opacity: .6;
+			}
+		}
+		.form-info-text {
+			width: 100%;
+			margin-top: 10px;
+			font-size: 13px;
+			line-height: 16px;
+			color: #737373;
+			text-align: right;
+		}
+	}
+
+}
+.form-control {
+	margin: 12px;
+	input {
+		border: none;
+		background: none;
+		outline: none;
+		transition: all .25s ease-in-out;
+		padding-left: 20px;
+		padding-right: 20px;
+		min-height: 39px;
+		width: 100%;
+		max-width: 145px;
+		background: #FFFFFF;
+		box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 8px;
+	}
+}
+.button {
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	background: none;
+	&.secondary {
+		background: #72C1BD;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+		border-radius: 10px;
+		padding: 14px 15px;
+		font-weight: 500;
+		font-size: 14px;
+		color: #fff;
+		line-height: 1.1em;
+	}
+	&.primary {
+		background: #31A59E;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+		border-radius: 10px;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 18px;
+		color: #FFFFFF;
+		padding: 12px 110px;
+	}
+}
+body {
+	color: $black;
+	height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	cursor: default;
+	overflow-x: hidden;
+}
+.game-container {
+	margin-top: 40px;
+	min-height: 350px;
+	padding-top: 40px;
+	width: 100%;
+	//background: rgba(255, 243, 243, 0.72);
+	background: rgba(255, 243, 243, 0.55);
+	box-shadow: 0px -2px 6px 1px rgba(0, 0, 0, 0.05);
+	border-radius: 0px 154.5px 0px 0px;
+}
+#background-wrap {
+    bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+
+/* KEYFRAMES */
+
+
+//to
+
+@keyframes fadeIn {
+	0% {
+		transform: translateY(3px);
+		opacity: 0.1;
+    }
+	60% {
+		transform: translateY(0);
+
+	}
+    100% {
+		opacity: 1;
+    }
+}
+
+.array {
+	margin-top: 25px;
+	display: flex;
+	min-height: 120px;
+	position: relative;
+	.item {
+		position: absolute;
+		margin: 0 20px;
+		box-shadow: 0px 0px 10px 5px rgba(134, 22, 22, 0.11);
+		background: #FFFFFF;
+		width: 90px;
+		height: 90px;
+		font-weight: 600;
+		font-size: 54px;
+		line-height: normal;
+		color: #916767;
+		//text-shadow: 1px 1px #fde4e4;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		transition: all .3s ease-in-out;
+		transform: translateX(0);
+		animation: fadeIn .5s linear;
+		&.active {
+			transform: scale(1.35);
+		}
+	}
+}
+.info-box {
+	padding-top: 120px;
+	background: linear-gradient(180deg, rgba(255, 243, 243, 0.55) 0%, #DDE7E6 53.45%);
+	min-height: 250px;
+}
+
+
+
+@keyframes animateBubble {
+    /*
+	0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+	*/
+	0% {
+        margin-top: 100px;
+    }
+    100% {
+        margin-top: -100px;
+    }
+}
+
+@keyframes sideWays {
+    0% {
+		transform: translateX(-200px);
+    }
+    100% {
+		transform: translateX(0px);
+    }
+}
+/* ANIMATIONS */
+/*
+.x1 {
+	animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: -5%;
+	top: 5%;
+	transform: scale(0.6);
+}
+
+.x2 {
+    -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+	left: 5%;
+	top: 80%;
+
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x3 {
+    -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left: 10%;
+	top: 40%;
+
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	transform: scale(0.7);
+}
+
+.x4 {
+    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+
+	left: 20%;
+	top: 0;
+
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x5 {
+    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+	left: 30%;
+	top: 50%;
+
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.x6 {
+    -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left: 50%;
+	top: 0;
+
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.x7 {
+    -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left: 65%;
+	top: 70%;
+
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x8 {
+    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+
+	left: 80%;
+	top: 10%;
+
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x9 {
+    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+	left: 90%;
+	top: 50%;
+
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.x10 {
+	animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left: 80%;
+	top: 80%;
+
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+/* OBJECTS */
+
+
+
+.x1 {
+	animation: animateBubble 25s linear infinite, sideWays 7s ease-in-out infinite alternate;
+	left: -5%;
+	top: 5%;
+	transform: scale(0.5);
+}
+
+.x2 {
+	animation: animateBubble 20s linear infinite, sideWays 8s ease-in-out infinite alternate;
+
+	left: 5%;
+	top: 80%;
+
+	transform: scale(0.3);
+}
+
+.x3 {
+	animation: animateBubble 28s linear infinite, sideWays 3s ease-in-out infinite alternate;
+
+	left: 10%;
+	top: 40%;
+	transform: scale(0.6);
+}
+
+.x4 {
+	animation: animateBubble 22s linear infinite, sideWays 5s ease-in-out infinite alternate;
+
+	left: 20%;
+	top: 0;
+	transform: scale(0.2);
+}
+
+.x5 {
+	animation: animateBubble 29s linear infinite, sideWays 8s ease-in-out infinite alternate;
+
+	left: 30%;
+	top: 50%;
+	transform: scale(0.4);
+}
+
+.x6 {
+	animation: animateBubble 21s linear infinite, sideWays 3.4s ease-in-out infinite alternate;
+
+	left: 50%;
+	top: 0;
+	transform: scale(0.7);
+}
+
+.x7 {
+	animation: animateBubble 20s linear infinite, sideWays 3s ease-in-out infinite alternate;
+
+	left: 65%;
+	top: 70%;
+	transform: scale(0.3);
+}
+
+.x8 {
+	animation: animateBubble 22s linear infinite, sideWays 7s ease-in-out infinite alternate;
+
+	left: 80%;
+	top: 10%;
+	transform: scale(0.2);
+}
+
+.x9 {
+	animation: animateBubble 29s linear infinite, sideWays 6s ease-in-out infinite alternate;
+	left: 90%;
+	top: 50%;
+	transform: scale(0.5);
+}
+
+.x10 {
+	animation: animateBubble 26s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	left: 80%;
+	top: 80%;
+	transform: scale(0.2);
+}
+
+.bubble {
+	border-radius: 50%;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+	//box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    height: 100px;
+	transition: all .25s ease-in-out;
+	position: absolute;
+	width: 100px;
+	&:nth-child(even) {
+		background: rgba(49, 165, 158, 0.1);
+	}
+	&:nth-child(odd) {
+		background: rgba(249, 222, 222, 0.3);
+	}
+}
+
+body {
+	overflow-x: hidden;
+}
+.bg {
+	&-item {
+		top: 80px;
+		width: 507.41px;
+		position: absolute;
+		left: 90%;
+		height: 314.89px;
+		background: rgba(249, 222, 222, 0.5);
+		border-radius: 14px;
+		//transform: rotate(13deg);
+		//transform: rotate(18.35deg);
+		transform: rotate(16deg);
+		display: none;
+		// to delete
+	}
+}
+.bubble:after {
+    //background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* W3C */
+    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	border-radius: 50%;
+	box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	content: ' ';
+    height: 180px;
+	left: 10px;
+	position: absolute;
+	width: 180px;
+}
